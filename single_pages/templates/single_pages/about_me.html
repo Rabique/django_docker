@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <title> About 라비크 </title>
+
+    <link rel="stylesheet" href="{% static 'blog/bootstrap/bootstrap.min.css' %}" media="screen">
+    <link rel="stylesheet" href="{% static 'single_pages/css/about_me.css' %}" media="screen">
+    <script src="https://kit.fontawesome.com/726bbd6862.js" crossorigin="anonymous"></script>
+</head>
+<body>
+
+{% include 'blog/navbar.html' %}
+
+<section>
+    <div class="container mt-4">
+        <div class="row">
+            <div class="col-lg-8">
+                <h1>안녕하세요. 라비크입니다.</h1>
+                <br/>
+                <p class="lead">
+                    시 코딩과 그리스비극 Aerospace Engineering을 좋아합니다<br/>
+                    
+                </p>
+
+                <ul>
+                    <li>WORK EXPERIENCE</li>
+                    <ul>
+                        <li>METRO DENTAL CLINIC</li>
+                        
+                    </ul>
+                    <li>EDUCATION</li>
+                    <ul>
+                        <li>Ph.D. dental medicine </li>
+                        
+                    </ul>
+                    <li><a href='/saraband'>SARABAND</a></li>
+                </ul>
+
+            </div>
+            <div class="col-lg-4">
+                <img class="img-fluid" src="{% static 'single_pages/images/partenon.jpg' %}">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="bg-light margin-for-footer">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h1>PORTFOLIO</h1>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#artemis">
+                    <img class="card-img-top" src="{% static 'single_pages/images/artemis.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Artemis</h5>
+                        <p>수렵과 달의 여신</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#space-x">
+                    <img class="card-img-top" src="{% static 'single_pages/images/space-x.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Space-X</h5>
+                        <p>Space-X 로켓개발</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-lg-4">
+                <div class="card" data-toggle="modal" data-target="#rocket">
+                    <img class="card-img-top" src="{% static 'single_pages/images/rocket.jpg' %}">
+                    <div class="card-body">
+                        <h5 class="card-title">Rocket launch</h5>
+                        <p>ARTEMIS-PROJECT  Space-X</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<!-- Modal -->
+<div class="modal fade" id="artemis" tabindex="-1" role="dialog" aria-labelledby="artemisModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="artemisModalLabel">ARTEMIS goddess</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/artemis.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>사냥과 달의 여신</p>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="modal fade" id="space-x" tabindex="-1" role="dialog" aria-labelledby="space-xModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id=" space-xModalLabel">SPACE-X</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/space-x.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>최초의 민간 우주 발사체 Space-X</p>
+                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> ARTEMIS-PROJECT</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="rocket" tabindex="-1" role="dialog" aria-labelledby="rocketModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id=" rocketModalLabel">ROCKET-LAUNCH</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <div class="row">
+                    <div class="col-lg-7">
+                        <img class="img-fluid" src="{% static 'single_pages/images/rocket.jpg' %}">
+                    </div>
+                    <div class="col-lg-5">
+                        <p>ARTEMIS-PROJECT 아폴로 달 탐사이후 NASA에서 추진하는 최초의 유인 달탐사 프로젝트</p>
+                        <button type="button" class="btn btn-light"><i class="fas fa-chalkboard-teacher"></i> ROCKET</button>
+                    </div>
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<div class="fixed-bottom">
+    {% include 'blog/footer.html' %}
+</div>
+
+<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+
+
+</body>
+</html>
